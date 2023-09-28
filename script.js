@@ -36,8 +36,6 @@ async function sendFormData(formData) {
 }
 
 form.addEventListener("submit", async (event) => {
-  // Предотвращает действие браузера по умолчанию. В данном случае — отправку формы
-  // https://learn.javascript.ru/default-browser-action
   event.preventDefault();
 
   const formData = new FormData(form);
